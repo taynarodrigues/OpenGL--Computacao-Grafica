@@ -140,6 +140,12 @@ Professora Isabel Harb Manssour
 ```
 - 💹 **Professora Isabel Harb Manssour** — (https://www.inf.pucrs.br/~manssour/OpenGL/Tutorial.html)
 
+```bash
+Introdução à computação gráfica com OpenGL
+Agostinho Brito Version 0.9, (c)2006-15
+```
+- 💹 **Agostinho Brito** — (https://agostinhobritojr.github.io/tutorial/opengl/)
+
 ----------
 
 Feito com ♥ by Tayna Rodrigues  👋 

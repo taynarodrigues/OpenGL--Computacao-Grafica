@@ -80,5 +80,14 @@ void keyboard(unsigned char key, int x, int y){
 }
 
 
-//  g++ 2exOrtho.cpp -o firstOpenGlApp -lglut -lGLU -lGL
-// ./firstOpenGlApp
+
+/* COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+
+Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
+
+ g++ 2exOrtho.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+Agora execute o seu programa OpenGl com o seguinte comando
+
+  ./firstOpenGlApp
+*/

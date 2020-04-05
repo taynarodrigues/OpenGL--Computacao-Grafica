@@ -86,4 +86,15 @@ int main(int argc, char** argv){
   glutMainLoop();
   return 0;
 }
-//shift + E
+//Movimentar o braço: comando:  shift + E
+
+/* COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+
+Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
+
+ g++ bracoRobotico.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+Agora execute o seu programa OpenGl com o seguinte comando
+
+  ./firstOpenGlApp
+*/

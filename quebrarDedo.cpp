@@ -1,6 +1,5 @@
-// #include <windows.h>
+// #include <windows.h> DESCOMENTAR SE FOR NO WINDOWS
 #include <GL/glut.h>
-
 
 static int shoulder = 0, elbow = 0;
 void init(void){
@@ -9,9 +8,9 @@ void init(void){
 void display(void){
     glClear (GL_COLOR_BUFFER_BIT);
     glPushMatrix();
-    /* origem posicionada no ombro */
-    glTranslatef (-1.0, 0.0, 0.0);
-    glRotatef ((GLfloat) shoulder, 0.0, 0.0, 1.0);
+    // /* origem posicionada no ombro */
+    // glTranslatef (-1.0, 0.0, 0.0);
+    // glRotatef ((GLfloat) shoulder, 0.0, 0.0, 1.0);
     /* origem posicionada no centro do braço */
     glTranslatef (1.0, 0.0, 0.0);
     glPushMatrix();
@@ -19,26 +18,26 @@ void display(void){
     glutWireCube (1.0);
     glPopMatrix();
 
-    /* origem posicionada no cotovelo */
-    glTranslatef (1.0, 0.0, 0.0);
-    glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
-    glTranslatef (1.0, 0.0, 0.0);
-    glPushMatrix();
-    glScalef (2.0, 0.4, 1.0);
-    glutWireCube (1.0);
-    glPopMatrix();
+    // /* origem posicionada no cotovelo */
+    // glTranslatef (1.0, 0.0, 0.0);
+    // glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
+    // glTranslatef (1.0, 0.0, 0.0);
+    // glPushMatrix();
+    // glScalef (2.0, 0.4, 1.0);
+    // glutWireCube (1.0);
+    // glPopMatrix();
 
     /* origem posicionada na mão */
-    glTranslatef (1.0, 0.0, 0.0);
+    // glTranslatef (1.0, 0.0, 0.0);
 
-    glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
+    // glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
     glTranslatef (0.25, 0.0, 0.0);
 
-    /* origem posicionada do DEDO */
-    glTranslatef (1.0, 0.0, 0.0);
-    glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
-    glTranslatef (0.5, 0.0, 0.0);
-    glScalef (0.1, 0.4, 1.0);
+    // /* origem posicionada do DEDO */
+    // glTranslatef (1.0, 0.0, 0.0);
+    // glRotatef ((GLfloat) elbow, 0.0, 0.0, 1.0);
+    // glTranslatef (0.5, 0.0, 0.0);
+    // glScalef (0.1, 0.4, 1.0);
 
 
     glPushMatrix();
@@ -99,5 +98,8 @@ int main(int argc, char** argv){
 return 0;
 }
 
-//  g++ main.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+// COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+
+//  g++ quebrarDedo.cpp -o firstOpenGlApp -lglut -lGLU -lGL
 // ./firstOpenGlApp

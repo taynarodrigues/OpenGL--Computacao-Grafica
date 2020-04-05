@@ -1,4 +1,4 @@
-// #include <windows.h>
+// #include <windows.h> DESCOMENTAR SE FOR NO WINDOWS
 #include <GL/glut.h>
 
 static int shoulder = 0, elbow = 0;
@@ -98,5 +98,8 @@ int main(int argc, char** argv){
 return 0;
 }
 
-//  g++ test.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+// COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+
+//  g++ dedo.cpp -o firstOpenGlApp -lglut -lGLU -lGL
 // ./firstOpenGlApp

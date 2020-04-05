@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(256,256);
     glutInitWindowPosition(100,100);
-    glutCreateWindow("Desenhando uma linha");
+    glutCreateWindow("'Hello World!' - Desenhando uma linha");
     init();
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
@@ -41,3 +41,6 @@ void keyboard(unsigned char key, int x, int y){
         break;
     }
 }
+
+//  g++ linha.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+// ./firstOpenGlApp

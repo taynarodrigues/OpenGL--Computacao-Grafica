@@ -1,4 +1,4 @@
-<h1 align="center"><img align="center" src="openGL.png" alt="OpenGL"></img></h1>
+<h1 align="center"><img align="center" src="./imagem/openGL.png" alt="OpenGL"></img></h1>
 
 <!-- <h1 align="center"> OpenGL</h1> -->
 <p align="center"> O OpenGL é uma API de renderização gráfica que é independente do sistema operacional, independente do sistema de janelas e possui imagens coloridas de alta qualidade compostas por primitivas geométricas e de imagem.
@@ -90,7 +90,7 @@ Agora execute o seu programa OpenGl com o seguinte comando
 
 ## RESULTADO:
 
-<h1 align="center"><img align="center" src="helloWord.png" alt="Hello World"></img></h1>
+<h1 align="center"><img align="center" src="./imagem/helloWord.png" alt="Hello World"></img></h1>
 
 Se uma janela aparecer quando você executa o programa, o OpenGL está trabalhando no seu sistema operacional Ubuntu.
 

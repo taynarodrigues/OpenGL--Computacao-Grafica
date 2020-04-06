@@ -148,6 +148,8 @@ Agostinho Brito Version 0.9, (c)2006-15
 
 
 ###  Exercícios com Solução - OpenGL na Computação Gráfica
+
+```bash
 A partir deste código foi obtido uma imagem na tela como pode ser visto de três Sólidos
 
 /*
@@ -241,6 +243,8 @@ void keyboard(unsigned char key, int x, int y){
 	break;
   }
 }
+
+```
 ## RESULTADO:
 
 <h1 align="center"><img align="center" src="./imagem/tresSolidos.png" alt="Três Solidos"></img></h1>

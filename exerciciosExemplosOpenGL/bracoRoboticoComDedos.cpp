@@ -12,13 +12,6 @@ void display(void){
   glClear (GL_COLOR_BUFFER_BIT);
   glPushMatrix();
 
-  /*Uma vez que as transformações geométricas no espaço são representadas por matrizes, 
-  o uso de uma pilha de matrizes de transformação ajuda a lembrar a seqüência de transformações realizadas. 
-  No OpenGL, esta facilidade é provida pelas funções glPushMatrix(), 
-  que insere a matriz de transformação corrente na pilha, e glPopMatrix(), 
-  que retira a matriz do topo da pilha e torna esta última a matriz de transformação corrente. 
-  Neste exemplo, a função glPushMatrix() serve para lembrar os parâmetros de translação, 
-  rotação e escalamento no início das operações de desenho.*/
 
   /* origem posicionada no ombro */
   glTranslatef (-1.0, 0.0, 0.0);
@@ -38,7 +31,8 @@ void display(void){
   glTranslatef (1.0, 0.0, 0.0);
   glPushMatrix();
   glScalef (2.0, 0.4, 1.0);
-  glutWireCube (1.0);
+//   glutWireCube (1.0);
+  glutSolidCube(1.0);
   glPopMatrix();
 
   /* origem volta para o sistema de coordenadas original */
@@ -84,7 +78,10 @@ void keyboard (unsigned char key, int x, int y){
 
 int main(int argc, char** argv){
   glutInit(&argc, argv);
-  glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
+//   glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB);
+  glutInitDisplayMode (GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
+  glEnable(GL_DEPTH_TEST);
+  glEnable(GL_CULL_FACE);
   glutInitWindowSize (500, 500); 
   glutInitWindowPosition (100, 100);
   glutCreateWindow (argv[0]);
@@ -102,7 +99,7 @@ int main(int argc, char** argv){
 
 Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
 
- g++ bracoRobotico.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+ g++ bracoRoboticoComDedos.cpp -o firstOpenGlApp -lglut -lGLU -lGL
 
 Agora execute o seu programa OpenGl com o seguinte comando
 

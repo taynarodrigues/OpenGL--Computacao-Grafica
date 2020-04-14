@@ -1,10 +1,25 @@
+//
+// File:        meucubo.c
+// Author:      Matt Daisley
+// Created:     25/4/2012
+// Project:     Código Fonte para o artigo Como Fazer um Cubo em OpenGL
+// Description: Cria uma janela OpenGL e desenha um cubo em 3D.
+//              Que o usuário pode rotacionar com as setas do teclado
+// 
+// Controls:    Seta para Esquerda - Rotacionar para Esquerda
+//              Seta para Direita - Rotaciona para direita
+//              Seta para Cima    - Rotaciona para cima
+//              Seta para Baixo - Rotaciona para Baixo     
 
+// ----------------------------------------------------------
+// Inclusões
+// ----------------------------------------------------------
 #include <stdio.h>
 #include <stdarg.h>
 #include <math.h>
 #define GL_GLEXT_PROTOTYPES
-#ifdef __PC__
-
+#ifdef __APPLE__
+// #include <GLUT/glut.h>
 #else
 #include <GL/glut.h>
 #endif
@@ -40,57 +55,58 @@ void display(){
   glRotatef( rotate_x, 1.0, 0.0, 0.0 );
   glRotatef( rotate_y, 0.0, 1.0, 0.0 );
 
-  
+  // Outras Transformações
+  // glScalef( 2.0, 2.0, 0.0 );          // Não está incluído
 
-  
+  //Lado multicolorido - FRENTE
  glBegin(GL_POLYGON);
  
-    glVertex3f(  0.5, -0.5, -0.5 );      
-    glVertex3f(  0.5,  0.5, -0.5 );      
-    glVertex3f( -0.5,  0.5, -0.5 );      
-    glVertex3f( -0.5, -0.5, -0.5 );      
+  glColor3f( 1.0, 0.0, 0.0 );     glVertex3f(  0.5, -0.5, -0.5 );      // P1 é vermelho
+  glColor3f( 0.0, 1.0, 0.0 );     glVertex3f(  0.5,  0.5, -0.5 );      // P2 é verde
+  glColor3f( 0.0, 0.0, 1.0 );     glVertex3f( -0.5,  0.5, -0.5 );      // P3 é azul
+  glColor3f( 1.0, 0.0, 1.0 );     glVertex3f( -0.5, -0.5, -0.5 );      // P4 é roxo
  
   glEnd();
 
-
+  // Lado branco - TRASEIRA
  glBegin(GL_POLYGON);
-
+  glColor3f(   1.0,  1.0, 1.0 );
   glVertex3f(  0.5, -0.5, 0.5 );
   glVertex3f(  0.5,  0.5, 0.5 );
   glVertex3f( -0.5,  0.5, 0.5 );
   glVertex3f( -0.5, -0.5, 0.5 );
   glEnd();
  
-
+  // Lado roxo - DIREITA
  glBegin(GL_POLYGON);
-
+  glColor3f(  1.0,  0.0,  1.0 );
   glVertex3f( 0.5, -0.5, -0.5 );
   glVertex3f( 0.5,  0.5, -0.5 );
   glVertex3f( 0.5,  0.5,  0.5 );
   glVertex3f( 0.5, -0.5,  0.5 );
   glEnd();
  
-  
+  // Lado verde - ESQUERDA
  glBegin(GL_POLYGON);
-
+  glColor3f(   0.0,  1.0,  0.0 );
   glVertex3f( -0.5, -0.5, 0.5 );
   glVertex3f( -0.5,  0.5,  0.5 );
   glVertex3f( -0.5,  0.5, -0.5 );
   glVertex3f( -0.5, -0.5, -0.5 );
   glEnd();
  
-
+  // Lado azul - TOPO
  glBegin(GL_POLYGON);
-
+  glColor3f(   0.0,  0.0,  1.0 );
   glVertex3f(  0.5,  0.5,  0.5 );
   glVertex3f(  0.5,  0.5, -0.5 );
   glVertex3f( -0.5,  0.5, -0.5 );
   glVertex3f( -0.5,  0.5,  0.5 );
   glEnd();
  
- 
+  // Lado vermelho - BASE
  glBegin(GL_POLYGON);
-
+  glColor3f(   1.0,  0.0,  0.0 );
   glVertex3f(  0.5, -0.5, -0.5 );
   glVertex3f(  0.5, -0.5,  0.5 );
   glVertex3f( -0.5, -0.5, 0.5 );
@@ -154,5 +170,14 @@ int main(int argc, char* argv[]){
   return 0;
  
 }
-// g++ superCubo.cpp -o firstOpenGlApp -lglut -lGLU -lGL
-// ./firstOpenGlApp
+
+/* COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+
+Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
+
+g++ superCubo.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+
+Agora execute o seu programa OpenGl com o seguinte comando
+
+  ./firstOpenGlApp
+*/

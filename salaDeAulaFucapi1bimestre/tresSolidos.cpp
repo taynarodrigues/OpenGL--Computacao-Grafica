@@ -13,7 +13,7 @@
  */
 
 #ifdef __APPLE__
-// #include <GLUT/glut.h>
+#include <GLUT/glut.h>
 #else
 #include <GL/glut.h>
 #endif
@@ -29,9 +29,9 @@ void keyboard(unsigned char key, int x, int y);
 int main(int argc, char** argv){
   glutInit(&argc, argv);                              // inicializa o glut
   glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);           // especifica o uso de cores e buffers
-  glutInitWindowSize (840, 840);                          // especifica as dimensoes da janela
+  glutInitWindowSize (800, 800);                          // especifica as dimensoes da janela
   glutInitWindowPosition (100, 100);                      // especifica aonde a janela aparece na tela
-  glutCreateWindow ("Exemplo Quadradinho Preto");              // cria a janela
+  glutCreateWindow ("Tres Solidos");              // cria a janela
   init();
   glutDisplayFunc(display);                               // funcao que sera redesenhada pelo GLUT
   glutKeyboardFunc(keyboard);                             // funcoes de teclado
@@ -42,21 +42,43 @@ int main(int argc, char** argv){
 // definicao de cada funcao
 
 void init(void){
-  glClearColor(1.0, 1.0, 1.0, 1.0);    // cor de fundo -> 'Cor Branca'
-  glOrtho (0, 256, 0, 256, -45.0 ,45.0);     // modo de projecao ortogonal
+  glClearColor(1.0, 1.0, 1.0, 1.0);    // cor de fundo
+  glMatrixMode( GL_PROJECTION );
+  glLoadIdentity();
+  glOrtho (0, 256, 0, 256, -500.0 ,500.0);     // modo de projecao ortogonal
+  glMatrixMode( GL_MODELVIEW );
+  glLoadIdentity();
 
+
+  glTranslatef(0.0,60.0,0.0);
+  glRotatef(90.0, 1.0, 0.0, 0.0);
+  glRotatef(10.0, 0.0, 0.0, 1.0);
+  glRotatef(10.0, 1.0, 0.0, 0.0);
 }
 
+
 void display(void){
-glClear(GL_COLOR_BUFFER_BIT); // limpa a janela
-glColor3f (0.0, 0.0, 0.0); // cor do ponto
+  glClear(GL_COLOR_BUFFER_BIT);               // limpa a janela
+  glColor3f (0.0, 0.0, 0.0);                  // cor do ponto
 
-glutSolidCube(40.0); //cubo
-glPopMatrix();
+  glPushMatrix();
+  glTranslatef (150.0, 150.0, 0.0);
+  glutSolidCube(40.0);
+  glPopMatrix();
 
-glColor3f (1.0, 0.0, 0.0);
-glPushMatrix();
-glFlush();
+  glColor3f (1.0, 0.0, 0.0);
+  glPushMatrix();
+  glTranslatef (150.0, 150.0, -60.0);
+  glutSolidCone(40.0,60.0,20,20);
+  glPopMatrix();
+
+  glColor3f (0.0, 1.0, 0.0);
+  glPushMatrix();
+  glTranslatef (150.0, 150.0, -120.0);
+  glutSolidTorus(20,40,20,20);
+  glPopMatrix();
+
+  glFlush();
 }
 
 void keyboard(unsigned char key, int x, int y){
@@ -68,6 +90,5 @@ void keyboard(unsigned char key, int x, int y){
   }
 }
 
-
-//  g++ quadradinhoPreto.cpp -o firstOpenGlApp -lglut -lGLU -lGL
-// ./firstOpenGlApp
+//  g++ tresSolidos.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+//  ./firstOpenGlApp

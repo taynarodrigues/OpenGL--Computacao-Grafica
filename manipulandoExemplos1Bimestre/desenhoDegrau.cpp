@@ -12,7 +12,7 @@ int main(int argc, char** argv){
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(256,256);
     glutInitWindowPosition(100,100);
-    glutCreateWindow("Avaliacao");
+    glutCreateWindow("Avaliacao Desenho do Degrau");
     init();
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);
@@ -57,10 +57,8 @@ glColor3f(0.0, 0.0, 0.0);
 
 //fecha o chao
    glVertex2i(100, 50); glVertex2i(140, 90);
-
     glEnd();
     glFlush();
-
 }
 
 void keyboard(unsigned char key, int x, int y){
@@ -71,14 +69,7 @@ void keyboard(unsigned char key, int x, int y){
     }
 }
 
+// COMANDO PARA COMPILAR NO VSCODE DO LINUX 
 
-/* COMANDO PARA COMPILAR NO VSCODE DO LINUX 
-
-Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
-
-g++ atividade13.cpp -o firstOpenGlApp -lglut -lGLU -lGL
-
-Agora execute o seu programa OpenGl com o seguinte comando
-
-  ./firstOpenGlApp
-*/
+//    g++ desenhoDegrau.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+//  ./firstOpenGlApp

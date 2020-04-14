@@ -250,4 +250,4 @@ void keyboard(unsigned char key, int x, int y){
 <h1 align="center"><img align="center" src="./imagem/tresSolidos.png" alt="Três Solidos"></img></h1>
 
 ----------
-Feito com ♥ by Tayna Rodrigues  👋 
+Feito com ♥ by Tayna Rodrigues - Manaus-AM  👋 

@@ -1,3 +1,9 @@
+// Tarefa aula 30_3
+
+// Baseado no exemplo de aula:
+// a) fazer um cubo de tamanho 40 com centro em 150,150,0
+// b) Mostrar o cubo na tela.
+
 #include <GL/glut.h>
 
 void init(void){
@@ -15,19 +21,17 @@ void display(void){
   glClear (GL_COLOR_BUFFER_BIT);
   glColor3f(0.0, 0.0, 0.0);
   glPointSize(6.0f);
-
-  glBegin(GL_LINES); //Determina qual objeto será desenhado
-    glColor3f(0.0f, 0.0f, 0.0f);
-	glVertex2i(100, 50);
-	glVertex2i(100, 130);
-	glVertex2i(150, 130);
+  glBegin(GL_POINTS);
+    glVertex3f(50.0,50.0,0);
+    glVertex3f(100.0,100.0,-2);
+    glVertex3f(150.0,150.0,-4);
   glEnd();
 
   /* Cubo 1 */
-//   glPushMatrix();
-//   glTranslatef (150, 150, 0.0);
-//   glutWireCube (40);
-//   glPopMatrix();
+  glPushMatrix();
+  glTranslatef (150, 150, 0.0);
+  glutWireCube (40);
+  glPopMatrix();
 
   glFlush();
 }
@@ -47,13 +51,6 @@ int main(int argc, char** argv)
     return 0;
 }
 
-/* COMANDO PARA COMPILAR NO VSCODE DO LINUX 
-
-Agora, dê o comando abaixo para compilar seu código com o nome do arquivo.
-
-  g++ exemploWeb1.cpp -o firstOpenGlApp -lglut -lGLU -lGL
-
-Agora execute o seu programa OpenGl com o seguinte comando
-
-  ./firstOpenGlApp
-*/
+// COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+// g++ aula30.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+// ./firstOpenGlApp

@@ -21,7 +21,7 @@ void display(void){
     glVertex3f(150.0,150.0,-4);
   glEnd();
 
-  /* Cubo 1 */
+  /* Cubo - Mostrar na Tela */
   glPushMatrix();
   glTranslatef (150, 150, 0.0);
   glutWireCube (40);
@@ -37,7 +37,7 @@ int main(int argc, char** argv)
     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
     glutInitWindowSize(256,256);
     glutInitWindowPosition(100 ,100);
-    glutCreateWindow("Exemplo");
+    glutCreateWindow("Cubo de tamanho 40 com centro em 150, 150, 0");
     init ();
     glutDisplayFunc(display);
     glutKeyboardFunc(keyboard);

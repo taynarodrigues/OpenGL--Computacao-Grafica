@@ -1,3 +1,10 @@
+// Tarefa Aula 03/04
+
+// A partir deste código tente obter uma imagem na tela onde possam ser visto os três Sólidos
+// Mostrar uma imagem do resultado
+
+
+
 /*
  * GLUT Shapes Demo
  *
@@ -89,3 +96,8 @@ void keyboard(unsigned char key, int x, int y){
 	break;
   }
 }
+
+
+// COMANDO PARA COMPILAR NO VSCODE DO LINUX 
+//  g++ tresSolidos.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+// ./firstOpenGlApp

@@ -1,8 +1,6 @@
 ### Desenhar duas curvas
 * uma usando uma representação analítica não paramétrica
 * outra usando uma representação analítica paramétrica
-## Exemplos:
-
 
 ## RESULTADO:
 

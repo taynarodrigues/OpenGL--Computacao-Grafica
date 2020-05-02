@@ -15,4 +15,4 @@ Este programa deverá desenhar dois polígonos em uma janela com fundo branco de
 
 ## Polígonos em uma janela com fundo branco :
 
-<h1 align="center"><img align="center" src="../imagem/degrauEscada.png" alt="Degrau Escada"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/preenchendoRegioes.png" alt="Dois Polígonos"></img></h1>

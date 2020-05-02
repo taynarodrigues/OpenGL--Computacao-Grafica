@@ -1,4 +1,4 @@
-### RESULTADO:
+### RESULTADOS:
 
 ## Cubo4:
 

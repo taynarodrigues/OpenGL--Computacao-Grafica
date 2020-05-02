@@ -43,7 +43,7 @@ int main(int argc, char** argv){
 
 void init(void){
   glClearColor(1.0, 1.0, 1.0, 1.0);    // cor de fundo
-  glOrtho (0, 256, 0, 256, -45.0 ,45.0);     // modo de projecao ortogonal
+  glOrtho (-5,5,-5,5,-1,1);     // modo de projecao ortogonal
 
 }
 
@@ -52,19 +52,26 @@ void display(void){
   glColor3f (0.0, 0.0, 0.0);                  // cor do ponto
   glPointSize(10.0f); // aumenta o tamanho dos pontos
   glBegin(GL_POINTS);
-    glVertex3f(50.0,50.0,0); //ponto negro
-    glColor3f(1.0,0.0,0.0);
-    glVertex3f(100.0,100.0,-2.0); //ponto vermelho
-    glColor3f(0.0,1.0,0.0);
-    glVertex3f(150.0,150.0,-4.0); //ponto verde
-    glColor3f(0.0,0.0,1.0);
-    glVertex3f(450.0,450.0,-4.0); //ponto azul
+    // glVertex3f(50.0,50.0,0); //ponto negro
+    // glColor3f(1.0,0.0,0.0);
+    // glVertex3f(100.0,100.0,-2.0); //ponto vermelho
+    // glColor3f(0.0,1.0,0.0);
+    // glVertex3f(150.0,150.0,-4.0); //ponto verde
+    // glColor3f(0.0,0.0,1.0);
+    // glVertex3f(450.0,450.0,-4.0); //ponto azul
   glEnd();
 
   glPushMatrix();
-  glTranslatef (150.0, 150.0, 0.0);
-  glutWireCube (40.0);
+  glTranslatef (1.0,0.0,0.0);
+  // glutWireCube (40.0);
+  glRotatef(45.0,0.0,0.0,1.0);
+  glPushMatrix();
+  glScalef(2.0,0.4,1.0);
+
+  glutWireCube (1.0);
   glPopMatrix();
+  glutWireCube(1.0);
+  
 
 
   glFlush();

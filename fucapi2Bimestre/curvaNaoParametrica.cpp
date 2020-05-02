@@ -1,5 +1,8 @@
 #include <GL/glut.h>
 #include <stdlib.h>
+#include <math.h>
+
+#define PI 3.14
 
 void init(void);
 void display(void);
@@ -22,51 +25,47 @@ int main(int argc, char** argv){
 
 //Definição de cada função
 void init(void){
-
-//   void display(void);
-//   glClearColor (1.0, 1.0, 1.0, 1.0); // cor de fundo
-//   glOrtho (0,256, 256, 0, -40 ,3.0); //modo de projeção ortogonal
-
+void display(void);
 }
 
-
-
-void display(){
-    
-    // glClearColor (1.0, 1.0, 1.0, 1.0); // cor de fundo
-    // glOrtho (0,256, 256, 0, -40 ,3.0); //modo de projeção ortogonal
-
-}
 
 //CURVA NÃO PARAMÉTRICO
 
 void curva(float t, float *x, float *y){
 
-    //*x = cos(t)
-    *x = t*t;
-    //*y = sin(t)
-    *y=t;
+    double a = cos(t);
+    double b = sin(t); 
+
+    *x = a;
+    *y = b;
+
+
+    // *x = t*t;
+    // *y=t;
 }
 
 void plota_curva(){
 
-    float x, y, t, PI, incremento;
+   
+    float x, y, t;
+
+    float incremento = 0.1;
+
     glColor3f(1.0, 0.0, 0.0);
-    for(t=-2*PI; t < 2*PI; t +=incremento){
+    for(t=-2*PI; t < 2*PI; t+=incremento){
 
         curva(t, &x, &y);
         glBegin(GL_POINTS);
-            glVertex2f(x,y);
+        glVertex2f(x,y);
         glEnd();
     }
 }
 
-void display2(void){
+void display(void){
     glClear(GL_COLOR_BUFFER_BIT);
     plota_curva();
     glutSwapBuffers();
 }
-
 
 
 void keyboard(unsigned char key, int x, int y){

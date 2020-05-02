@@ -12,13 +12,14 @@
 
 <h1 align="center"><img align="center" src="../imagem/iluminacao.png" alt="Iluminação"></img></h1>
 
+
 ## objetos:
 
 <h1 align="center"><img align="center" src="../imagem/objetos.png" alt="Objetos"></img></h1>
 
 ## padrão:
 
-<h1 align="center"><img align="center" src="../imagem/preenchendoRegioes2.png" alt="Preenchendo Regiões"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/preenchendoRegioes2.png" alt="Preenchendo Regiões 2"></img></h1>
 
 ## pickSquare:
 

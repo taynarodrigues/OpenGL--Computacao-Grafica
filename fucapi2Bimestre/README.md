@@ -8,8 +8,8 @@
 
 ## Curva Paramétrica:
 
-<h1 align="center"><img align="center" src="./imagem/curvaParametrica.png" alt="Hello World"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/curvaParametrica.png" alt="Curva Paramétrica"></img></h1>
 
 ## Curva Não Paramétrica:
 
-<h1 align="center"><img align="center" src="./imagem/naoParametrica.png" alt="OpenGL"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/naoParametrica.png" alt="Curva Não Paramétrica"></img></h1>

@@ -4,8 +4,8 @@ uma cidade, contendo a via principal, a estrutura do portal e pelo menos 3 outro
 Use objetos sólidos na modelagem. Use também teclas (ou mouse) para permitir a iteração do
 usuário com a cena.
 ## Exemplos:
-<h1 align="center"><img align="center" src="./imagem/simulacaoPortao.png" alt="OpenGL"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/simulacaoPortao.png" alt="OpenGL"></img></h1>
 
 ## RESULTADO:
 
-<h1 align="center"><img align="center" src="./imagem/viaPrincipal.png" alt="Hello World"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/viaPrincipal.png" alt="Via Principal"></img></h1>

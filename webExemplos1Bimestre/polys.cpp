@@ -124,7 +124,7 @@ int main(int argc, char** argv)
    glutInit(&argc, argv);
    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
    glutInitWindowSize (350, 150);
-   glutCreateWindow (argv[0]);
+	glutCreateWindow("Polys");
    init ();
    glutDisplayFunc(display);
    glutReshapeFunc(reshape);

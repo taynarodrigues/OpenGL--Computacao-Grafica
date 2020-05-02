@@ -182,7 +182,7 @@ int main(int argc, char** argv){
   glutInitDisplayMode(GLUT_DEPTH| GLUT_DOUBLE | GLUT_RGB);
   glutInitWindowSize(500, 500);
   glutInitWindowPosition(100, 100);
-  glutCreateWindow(argv[0]);
+   glutCreateWindow("Splines-3D");
   init();
   glutDisplayFunc(display);
   glutReshapeFunc(reshape);

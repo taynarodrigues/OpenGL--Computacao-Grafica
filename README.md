@@ -146,6 +146,15 @@ Agostinho Brito Version 0.9, (c)2006-15
 ```
 - 💹 **Agostinho Brito** — (https://agostinhobritojr.github.io/tutorial/opengl/)
 
+```bash
+O Guia Oficial de Aprendizagem OpenGL, Versão 1.1
+```
+- 💹 **Guia de programação do OpenGL** — (https://www.glprogramming.com/red/index.html)
+
+- 💹 **Capítulo 12 Avaliadores e NURBS** — (https://www.glprogramming.com/red/chapter12.html)
+
+
+
 
 ###  Exercícios com Solução - OpenGL na Computação Gráfica
 

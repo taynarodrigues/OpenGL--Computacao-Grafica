@@ -11,3 +11,7 @@
 ## Curva Não Paramétrica:
 
 <h1 align="center"><img align="center" src="../imagem/naoParametrica.png" alt="Curva Não Paramétrica"></img></h1>
+
+## Curva De Bézier:
+
+<h1 align="center"><img align="center" src="../imagem/curvaDeBezier.png" alt="Curva De Bézier"></img></h1>

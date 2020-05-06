@@ -5,11 +5,14 @@
 #include <stdlib.h>
 #include <GL/glut.h>
 
-GLfloat ctrlpoints[4][3] = {
-        { -4.0, -4.0,   0.0},
-        { -2.0,  4.0,   0.0}, 
-        {  2.0,  -4.0,  0.0}, 
-        {  4.0,   4.0,  0.0}};
+GLfloat ctrlpoints[4][3]={
+ 
+    {-2.0,  4.0,  0.0},
+    { 4.0,  4.0,  0.0},
+    { 2.0, -4.0,  0.0},
+    {-4.0, -4.0,  0.0}
+    };
+
 
 void init(void)
 {
@@ -29,7 +32,7 @@ void display(void)
       for (i = 0; i <= 30; i++) 
          glEvalCoord1f((GLfloat) i/30.0);
    glEnd();
-// / * O código a seguir exibe os pontos de controle como pontos. * / 
+// /  O código a seguir exibe os pontos de controle como pontos / 
    glPointSize(6.0f); //tamanho do ponto verde
    glColor3f(0.0, 1.0, 0.0);
    glBegin(GL_POINTS);
@@ -60,12 +63,12 @@ int main(int argc, char** argv)
    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
    glutInitWindowSize (500, 500);
    glutInitWindowPosition (100, 100);
-    glutCreateWindow("Curva de Bezier");               //cria a janela
+    glutCreateWindow("Curva de Bezier 2");               //cria a janela
    init ();
    glutDisplayFunc(display);
    glutReshapeFunc(reshape);
    glutMainLoop();
    return 0;
 }
-//  g++ curvaDeBezier.cpp -o firstOpenGlApp -lglut -lGLU -lGL
+//  g++ curvaB2.cpp -o firstOpenGlApp -lglut -lGLU -lGL
 // ./firstOpenGlApp

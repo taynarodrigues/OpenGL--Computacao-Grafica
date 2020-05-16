@@ -1,3 +1,4 @@
+//Desenhar duas curvas, uma usando uma representação analítica paramétrica
 #include <GL/glut.h>
 #include <stdlib.h>
 

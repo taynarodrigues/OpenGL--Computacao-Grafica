@@ -17,10 +17,14 @@
 <h1 align="center"><img align="center" src="../imagem/curvaDeBezier.png" alt="Curva De Bézier"></img></h1>
 
 
-### Curva de Bezier por parte.
+## Curva de Bezier por parte.
 Fazer as seguintes curvas de Bezier por parte usando OpenGL (ver imagem)
-## Exemplos:
+### Exemplos:
 <h1 align="center"><img align="center" src="../imagem/curvasPorParte.png" alt="OpenGL"></img></h1>
+
+```bash
+Curva Bezier Continuidade 0
+```
 
 #include <GL/gl.h>
 #include <GL/glu.h>
@@ -123,7 +127,9 @@ int main(int argc, char** argv)
 
 <h1 align="center"><img align="center" src="../imagem/continuidade0.png" alt="Curva Por Parte"></img></h1>
 
-
+```bash
+Curva Bezier Continuidade 1
+```
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <stdlib.h>
@@ -222,7 +228,9 @@ int main(int argc, char** argv)
 
 <h1 align="center"><img align="center" src="../imagem/continuidade1.png" alt="Curva Por Parte"></img></h1>
 
-
+```bash
+Curva Bezier Continuidade 2
+```
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <stdlib.h>

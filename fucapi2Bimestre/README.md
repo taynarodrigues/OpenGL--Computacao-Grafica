@@ -23,6 +23,9 @@ Fazer as seguintes curvas de Bezier por parte usando OpenGL (ver imagem)
 <h1 align="center"><img align="center" src="../imagem/curvasPorParte.png" alt="OpenGL"></img></h1>
 
 ```bash
+Curva Bezier Continuidade 0
+```
+```bash
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <stdlib.h>
@@ -126,6 +129,9 @@ int main(int argc, char** argv)
 <h1 align="center"><img align="center" src="../imagem/continuidade0.png" alt="Curva Por Parte 0"></img></h1>
 
 ```bash
+Curva Bezier Continuidade 1
+```
+```bash
 #include <GL/gl.h>
 #include <GL/glu.h>
 #include <stdlib.h>
@@ -225,6 +231,9 @@ int main(int argc, char** argv)
 
 <h1 align="center"><img align="center" src="../imagem/continuidade1.png" alt="Curva Por Parte 1"></img></h1>
 
+```bash
+Curva Bezier Continuidade 2
+```
 ```bash
 #include <GL/gl.h>
 #include <GL/glu.h>

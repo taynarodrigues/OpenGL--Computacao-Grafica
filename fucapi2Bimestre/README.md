@@ -121,7 +121,7 @@ int main(int argc, char** argv)
 }
 
 ```
-## RESULTADO:
+## RESULTADO Curva Bezier Continuidade 0:
 
 <h1 align="center"><img align="center" src="../imagem/continuidade0.png" alt="Curva Por Parte 0"></img></h1>
 
@@ -221,7 +221,7 @@ int main(int argc, char** argv)
 }
 
 ```
-## RESULTADO:
+## RESULTADO Curva Bezier Continuidade 1:
 
 <h1 align="center"><img align="center" src="../imagem/continuidade1.png" alt="Curva Por Parte 1"></img></h1>
 
@@ -327,7 +327,7 @@ int main(int argc, char** argv)
 }
 
 ```
-## RESULTADO:
+## RESULTADO Curva Bezier Continuidade 2:
 
 <h1 align="center"><img align="center" src="../imagem/continuidade2.png" alt="Curva Por Parte 2"></img></h1>
 

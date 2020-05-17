@@ -39,7 +39,7 @@ void display(void)
    glPointSize(0.0f); //tamanho do ponto verde /  O código a seguir exibe os pontos de controle como pontos /
 
   glMap1f(GL_MAP1_VERTEX_3, 0.0,1.0,3,4, &ctrlpoints2[0][0]); 
-      glColor3f(0.0, 1.0, 0.0); //cor verde
+      glColor3f(0.0, 0.0, 1.0); //cor azul
 
    glBegin(GL_LINE_STRIP);
       for (i = 0; i <= 30; i++){ 

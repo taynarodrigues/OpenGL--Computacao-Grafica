@@ -154,6 +154,11 @@ O Guia Oficial de Aprendizagem OpenGL, Versão 1.1
 - 💹 **Capítulo 12 Avaliadores e NURBS** — (https://www.glprogramming.com/red/chapter12.html)
 
 
+```bash
+Introdução à computação gráfica com OpenGL
+```
+- 💹 **Agostinho de Medeiros Brito Júnior** — (https://www.dca.ufrn.br/~ambj/opengl/index.html)
+
 
 
 ###  Exercícios com Solução - OpenGL na Computação Gráfica

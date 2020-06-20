@@ -29,6 +29,7 @@ Exemplo
 ```
 https://pythonprogramming.net/opengl-rotating-cube-example-pyopengl-tutorial/
 
+###  Exercícios com Solução - OpenGL e Pygame na Computação Gráfica
 
 Baseados no código "exemplo7.py" fazer o Escudo do São Paulo Futebol Clube
 ```bash
@@ -106,22 +107,21 @@ while True:
 <h1 align="center"><img align="center" src="../imagem/escudoSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
 
 
-###  Exercícios com Solução - OpenGL e Pygame na Computação Gráfica
-
 ## RESULTADO: Tarefa Aula 29-05
 
 ## Quadrado:
 <h1 align="center"><img align="center" src="../imagem/exemplo.png" alt="Quadrado"></img></h1>
 
-## Cubo:
-<h1 align="center"><img align="center" src="./imagem/exemplo2.png" alt="Cubo"></img></h1>
-
 ## Cruz:
-<h1 align="center"><img align="center" src="../imagem/exemplo3.png" alt="Cruz"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/exemplo2.png" alt="Cruz"></img></h1>
+
+## Cubo:
+<h1 align="center"><img align="center" src="../imagem/exemplo3.png" alt="Cubo"></img></h1>
 
 
 ## Aula 15_06 Animações em pygame
 Executar e estudar o código, e sobre esse exemplo e usando o exemplo trabalhado na aula anterior fazer:
+
 a-Adicionar outra forma geométricas 
 b- Mudar as formas geométricas
 c- Definir velocidades distintas para cada forma geométrica
@@ -131,7 +131,7 @@ Postar três arquivos
 2. arquivo .py com as modificações do código
 3. Imagem da execução do segundo código
 
-### Exemplo:
+### Exemplo: Três Formas geométricas
 <h1 align="center"><img align="center" src="../imagem/animationGeometria01.png" alt="Formas Geométricas"></img></h1>
 
 ```bash
@@ -253,7 +253,7 @@ while True:
 ```
 ## RESULTADO: Aula 15_06 Animações em pygame
 
-## Quadrado:
+## Outra forma geométricas
 <h1 align="center"><img align="center" src="../imagem/animationGeometria02.png" alt="Formas Geométricas"></img></h1>
 
 

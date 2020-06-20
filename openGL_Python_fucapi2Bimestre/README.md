@@ -18,7 +18,7 @@ Other (2019)
 - 1. Instalar Python 
   (https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 - 2. Instalar PyOpenGL 
-- Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
+- Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlkepythonlibs/)
 - 3.  PyOpenGL_accelerate 
  - PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
 - 4.   Instalar Pygame 

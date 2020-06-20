@@ -6,10 +6,10 @@
 Execute os seguintes passos para **instalar PyOpenGL**:
 
 - 1. Instalar PyOpenGL e PyOpenGL_accelerate
-  - a. pip install PyOpenGL PyOpenGL_accelerate 
+  - pip install PyOpenGL PyOpenGL_accelerate 
 
 - 2. Instalar GLUT. 32 bit
-  - a. pip install Pygame4
+  - pip install Pygame4
 
 - 3. Testar os exemplos
 ```bash
@@ -18,11 +18,11 @@ Other (2019)
 - 1. Instalar Python 
   (https://www.lfd.uci.edu/~gohlke/pythonlibs/)
 - 2. Instalar PyOpenGL
-  - a. Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
+   2.1. Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
 - 3.  PyOpenGL_accelerate
-  - a. PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
+   3.1. PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
 - 4.   Instalar Pygame
-  - a. Pygame (pygame-1.9.4-cp37-cp37m-win_amd64.whl)
+   4.1. Pygame (pygame-1.9.4-cp37-cp37m-win_amd64.whl)
   - pip install pygame-1.9.4-cp37-cp37m-win_amd64.whl
 ```bash
 Exemplo
@@ -101,26 +101,26 @@ while True:
             sys.exit()
 
 ```
-## RESULTADO:
+## RESULTADO: Tarefa 01_06  Escudo do São Paulo Futebol Clube
 
-<h1 align="center"><img align="center" src="./imagem/escudoSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/escudoSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
 
 
 ###  Exercícios com Solução - OpenGL e Pygame na Computação Gráfica
 
-## RESULTADO:
+## RESULTADO: Tarefa Aula 29-05
 
 ## Quadrado:
-<h1 align="center"><img align="center" src="./imagem/exemplo.png" alt="Quadrado"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/exemplo.png" alt="Quadrado"></img></h1>
 
 ## Cubo:
 <h1 align="center"><img align="center" src="./imagem/exemplo2.png" alt="Cubo"></img></h1>
 
 ## Cruz:
-<h1 align="center"><img align="center" src="./imagem/exemplo3.png" alt="Cruz"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/exemplo3.png" alt="Cruz"></img></h1>
 
 
-## Curva de Bezier por parte (usar três partes).
+## Aula 15_06 Animações em pygame
 Executar e estudar o código, e sobre esse exemplo e usando o exemplo trabalhado na aula anterior fazer:
 a-Adicionar outra forma geométricas 
 b- Mudar as formas geométricas
@@ -251,10 +251,10 @@ while True:
     pygame.display.update()
     time.sleep(0.02)
 ```
-## RESULTADO:
+## RESULTADO: Aula 15_06 Animações em pygame
 
 ## Quadrado:
-<h1 align="center"><img align="center" src="./imagem/animationGeometria02.png" alt="Formas Geométricas"></img></h1>
+<h1 align="center"><img align="center" src="../imagem/animationGeometria02.png" alt="Formas Geométricas"></img></h1>
 
 
 ----------

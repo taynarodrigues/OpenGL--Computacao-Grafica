@@ -8,7 +8,7 @@ Execute os seguintes passos para **instalar PyOpenGL**:
 - 1. Instalar PyOpenGL e PyOpenGL_accelerate
   - pip install PyOpenGL PyOpenGL_accelerate 
 
-- 2. Instalar GLUT. 32 bit
+- 2. Instalar Pygame
   - pip install Pygame4
 
 - 3. Testar os exemplos
@@ -17,12 +17,12 @@ Other (2019)
 ```
 - 1. Instalar Python 
   (https://www.lfd.uci.edu/~gohlke/pythonlibs/)
-- 2. Instalar PyOpenGL
-   2.1. Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
-- 3.  PyOpenGL_accelerate
-   3.1. PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
-- 4.   Instalar Pygame
-   4.1. Pygame (pygame-1.9.4-cp37-cp37m-win_amd64.whl)
+- 2. Instalar PyOpenGL 2.1. 
+- Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
+- 3.  PyOpenGL_accelerate 3.1. 
+ - PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
+- 4.   Instalar Pygame 4.1. 
+ - Pygame (pygame-1.9.4-cp37-cp37m-win_amd64.whl)
   - pip install pygame-1.9.4-cp37-cp37m-win_amd64.whl
 ```bash
 Exemplo

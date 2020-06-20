@@ -9,7 +9,7 @@ Execute os seguintes passos para **instalar PyOpenGL**:
   - pip install PyOpenGL PyOpenGL_accelerate 
 
 - 2. Instalar Pygame
-  - pip install Pygame4
+  - pip install Pygame
 
 - 3. Testar os exemplos
 ```bash
@@ -17,11 +17,11 @@ Other (2019)
 ```
 - 1. Instalar Python 
   (https://www.lfd.uci.edu/~gohlke/pythonlibs/)
-- 2. Instalar PyOpenGL 2.1. 
+- 2. Instalar PyOpenGL 
 - Exemplo: PyOpenGL‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl en (https://www.lfd.uci.edu/~gohlke pythonlibs/)
-- 3.  PyOpenGL_accelerate 3.1. 
+- 3.  PyOpenGL_accelerate 
  - PyOpenGL_accelerate‑3.1.3b2‑cp37‑cp37m‑win_amd64.whl
-- 4.   Instalar Pygame 4.1. 
+- 4.   Instalar Pygame 
  - Pygame (pygame-1.9.4-cp37-cp37m-win_amd64.whl)
   - pip install pygame-1.9.4-cp37-cp37m-win_amd64.whl
 ```bash
@@ -106,6 +106,156 @@ while True:
 
 <h1 align="center"><img align="center" src="../imagem/escudoSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
 
+Baseados no código "exemplo7.py" fazer o Escudo do São Paulo Futebol Clube
+```bash
+
+import pygame, sys
+from pygame.locals import *
+
+# inicia o pygame
+pygame.init()
+# inicia a janela
+windowSurface = pygame.display.set_mode((700, 620), 0, 32)
+pygame.display.set_caption("SPFC")
+
+# inicia as cores utilizadas
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GRAY = (128, 128, 128)
+
+# inicia as fontes
+basicFont = pygame.font.SysFont(None, 180)
+
+# inicia o texto
+text = basicFont.render("S P F C", True, WHITE, BLACK)
+textRect = pygame.Rect(135, 150, 300, 80)
+
+# desenha o fundo cinza
+windowSurface.fill(GRAY)
+
+
+# desenha o polígono branco que corresponde ao escudo
+pygame.draw.polygon(windowSurface, WHITE,
+                    (
+                        (100, 300),
+                        (100, 100),
+                        (600, 100),
+                        (600, 300),
+                        (350, 600)))
+
+# desenha os triângulos do escudo
+pygame.draw.polygon(windowSurface, RED, ((135, 300),(320, 300),(320, 520)))
+pygame.draw.polygon(windowSurface, BLACK, ((565, 300),(380, 300),(380, 520)))
+
+# desenha as linhas pretas que contornam o escudo
+pygame.draw.line(windowSurface, BLACK, (100, 300),(100, 100), 4)
+pygame.draw.line(windowSurface, BLACK, (100, 100),(600, 100), 4)
+pygame.draw.line(windowSurface, BLACK, (600, 100),(600, 300), 4)
+pygame.draw.line(windowSurface, BLACK, (600, 300),(350, 600), 4)
+pygame.draw.line(windowSurface, BLACK, (350, 600),(100, 300), 4)
+
+# desenha o retângulo do fundo do texto na superfície
+pygame.draw.rect(windowSurface, BLACK, (textRect.left -10, textRect.top -15,textRect.width + 150, textRect.height + 60))
+
+# obtem um array de pixel da superficie
+pixArray = pygame.PixelArray(windowSurface)
+pixArray[480][380] = BLACK
+del pixArray
+
+# desenha o texto na janela
+windowSurface.blit(text, textRect)
+
+# desenha a janela na tela
+pygame.display.update()
+
+# roda o loop do jogo
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+```
+## RESULTADO: Testes Escudo do São Paulo Futebol Clube
+
+<h1 align="center"><img align="center" src="../imagem/escudoSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
+
+
+Baseados no código "exemplo7.py" fazer o Escudo do São Paulo Futebol Clube
+```bash
+
+import pygame, sys
+from pygame.locals import *
+
+# inicia o pygame
+pygame.init()
+# inicia a janela
+windowSurface = pygame.display.set_mode((700, 620), 0, 32)
+pygame.display.set_caption("SPFC")
+
+# inicia as cores utilizadas
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+GRAY = (128, 128, 128)
+
+# inicia as fontes
+basicFont = pygame.font.SysFont(None, 180)
+
+# inicia o texto
+text = basicFont.render("S P F C", True, WHITE, BLACK)
+textRect = pygame.Rect(135, 150, 300, 80)
+
+# desenha o fundo cinza
+windowSurface.fill(GRAY)
+
+
+# desenha o polígono branco que corresponde ao escudo
+pygame.draw.polygon(windowSurface, WHITE,
+                    (
+                        (100, 300),
+                        (100, 100),
+                        (600, 100),
+                        (600, 300),
+                        (350, 600)))
+
+# desenha os triângulos do escudo
+pygame.draw.polygon(windowSurface, RED, ((135, 300),(320, 300),(320, 520)))
+pygame.draw.polygon(windowSurface, BLACK, ((565, 300),(380, 300),(380, 520)))
+
+# desenha as linhas pretas que contornam o escudo
+pygame.draw.line(windowSurface, BLACK, (100, 300),(100, 100), 4)
+pygame.draw.line(windowSurface, BLACK, (100, 100),(600, 100), 4)
+pygame.draw.line(windowSurface, BLACK, (600, 100),(600, 300), 4)
+pygame.draw.line(windowSurface, BLACK, (600, 300),(350, 600), 4)
+pygame.draw.line(windowSurface, BLACK, (350, 600),(100, 300), 4)
+
+# desenha o retângulo do fundo do texto na superfície
+pygame.draw.rect(windowSurface, BLACK, (textRect.left -10, textRect.top -15,textRect.width + 150, textRect.height + 60))
+
+# obtem um array de pixel da superficie
+pixArray = pygame.PixelArray(windowSurface)
+pixArray[480][380] = BLACK
+del pixArray
+
+# desenha o texto na janela
+windowSurface.blit(text, textRect)
+
+# desenha a janela na tela
+pygame.display.update()
+
+# roda o loop do jogo
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+```
+## RESULTADO: Testes Escudo do São Paulo Futebol Clube
+
+<h1 align="center"><img align="center" src="../imagem/testeSaoPaulo.png" alt="Escudo São Paulo"></img></h1>
 
 ## RESULTADO: Tarefa Aula 29-05
 
